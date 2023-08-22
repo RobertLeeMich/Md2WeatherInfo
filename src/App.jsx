@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
+    <div className='weather-display'>
     <WeatherDisplay />
+    </div>
     </>
   )
 }

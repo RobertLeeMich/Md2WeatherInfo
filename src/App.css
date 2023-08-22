@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.weather-display{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}

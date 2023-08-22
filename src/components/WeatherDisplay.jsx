@@ -8,7 +8,7 @@ function WeatherDisplay() {
     getWeather()
       .then(data => {
         setWeatherData(data);
-        console.log(data); // Correct placement of the console.log
+        console.log(data);
       })
       .catch(error => console.error('Error fetching weather:', error));
   }, []);
@@ -19,13 +19,12 @@ function WeatherDisplay() {
 
   const { name, main: { temp }, weather: [{ description }] } = weatherData;
 
-  // Convert temperature from Kelvin to Celsius
-  const tempCelsius = temp - 273.15;
+  const tempFahrenheit = (temp - 273.15) * 9/5 + 32;
 
   return (
     <div>
       <h1>{name}</h1>
-      <p>Temperature: {tempCelsius.toFixed(2)}°C</p>
+      <p>Temperature: {tempFahrenheit.toFixed(0)}°F</p>
       <p>Description: {description}</p>
     </div>
   );
