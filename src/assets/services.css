@@ -1,0 +1,16 @@
+.tabs {
+    display: flex;
+}
+
+.tab-content{
+    display: flex;
+}
+
+.tabs-container{
+}
+
+p{
+
+    max-width: 7em;
+    padding: 10px 10px 0 10px;
+}
