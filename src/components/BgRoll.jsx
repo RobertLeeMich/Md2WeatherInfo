@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from "react";
 
+//ROLLS THE GRADIENT BACKGROUND
 function BgRoll({ sunrise, sunset }) {
   useEffect(() => {
     const updateBackground = () => {

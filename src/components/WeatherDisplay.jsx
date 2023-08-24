@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { getWeather } from '../services/weatherAPI';
+import { useState, useEffect } from "react";
+import { getWeather } from "../services/weatherAPI";
 import BgRoll from "./BgRoll"
 
 
@@ -12,7 +12,7 @@ function WeatherDisplay() {
         setWeatherData(data);
         console.log(data);
       })
-      .catch(error => console.error('Error fetching weather:', error));
+      .catch(error => console.error("Error fetching weather:", error));
   }, []);
 
   if (!weatherData) {
@@ -28,10 +28,10 @@ function WeatherDisplay() {
 
   return (
     
-    <div className='weather-display'>
+    <div className="weather-display">
       <BgRoll sunrise={sunrise} sunset={sunset} />
       <h1>Current Temperature and Weather for:</h1>
-      <h1>{name}</h1>
+      <h1 className="name">{name}</h1>
       <p>Temperature: {tempFahrenheit.toFixed(0)}°F</p>
       <p>Description: {description}</p>
       <p>Sundown: {sunsetTime}</p>

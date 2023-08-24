@@ -1,0 +1,37 @@
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&family=Handjet&family=Satisfy&display=swap');
+
+  /* font-family: 'Chakra Petch', sans-serif;
+font-family: 'Handjet', cursive;
+font-family: 'Satisfy', cursive; */
+
+.tabs{
+    display: flex;
+}
+
+.tab-button{
+    border: none;
+    box-shadow: 20px 20px 50px 10px #A477BE inset;
+    font-size: 1em;
+    margin: 10px;
+    width: 7em;
+    height: 4em;
+}
+
+.tab-button:active {
+    transform: scale(0.75);
+    box-shadow: 3px 2px 22px 1px #A477BE inset;
+}
+
+.tab-content {
+    min-height: 200px;
+
+  }
+
+.th-hr{
+    max-width: 7em;
+    margin: 10px 10px 0 10px;
+}
+
+
+  
+  

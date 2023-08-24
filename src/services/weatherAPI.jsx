@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from "axios"
 
 const lat = 33.3807
 const lon = -84.7997
@@ -9,7 +9,7 @@ export const getWeather = () => {
   return axios.get(BASE_URL)
     .then(response => response.data)
     .catch(error => {
-      console.error('Error fetching weather data:', error)
+      console.error("Error fetching weather data:", error)
       throw error
     })
 }

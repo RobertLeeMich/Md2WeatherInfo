@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import "./assets/services.css"
 import WeatherDisplay from './components/WeatherDisplay'
 import ThreeHourForecast from './components/ThreeHourForecast'
 
