@@ -10,7 +10,8 @@
 }
 
 p{
-
+    /* min-width: 100px;
+    min-height: 100px; */
     max-width: 7em;
     padding: 10px 10px 0 10px;
 }
