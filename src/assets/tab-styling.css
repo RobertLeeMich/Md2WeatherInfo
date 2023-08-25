@@ -6,6 +6,8 @@ font-family: 'Satisfy', cursive; */
 
 .tabs{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tab-button{
@@ -24,14 +26,9 @@ font-family: 'Satisfy', cursive; */
 
 .tab-content {
     min-height: 200px;
-
   }
 
 .th-hr{
     max-width: 7em;
     margin: 10px 10px 0 10px;
 }
-
-
-  
-  

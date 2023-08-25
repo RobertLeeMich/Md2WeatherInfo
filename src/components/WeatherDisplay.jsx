@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getWeather } from "../services/weatherAPI";
 import BgRoll from "./BgRoll"
+import "../App.css"
 
 
 function WeatherDisplay() {
@@ -27,15 +28,16 @@ function WeatherDisplay() {
   const sunsetTime = new Date(sunset * 1000).toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"})
 
   return (
-    
-    <div className="weather-display">
-      <BgRoll sunrise={sunrise} sunset={sunset} />
-      <h1>Current Temperature and Weather for:</h1>
-      <h1 className="name">{name}</h1>
-      <p>Temperature: {tempFahrenheit.toFixed(0)}°F</p>
-      <p>Description: {description}</p>
-      <p>Sundown: {sunsetTime}</p>
-      <p>Sunrise: {sunriseTime}</p>
+    <div className="center-div">
+      <div className="weather-display">
+        <BgRoll sunrise={sunrise} sunset={sunset} />
+        <h1>Current Temperature and Weather for:</h1>
+        <h1 className="name">{name}</h1>
+        <p>Temperature: {tempFahrenheit.toFixed(0)}°F</p>
+        <p>Description: {description}</p>
+        <p>Sundown: {sunsetTime}</p>
+        <p>Sunrise: {sunriseTime}</p>
+      </div>
     </div>
   );
 }
